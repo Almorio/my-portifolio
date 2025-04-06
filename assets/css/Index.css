@@ -1,0 +1,289 @@
+/*
+    OBSERVAÇÕES
+
+    1. Não corrigiu o nome da pasta de "assents" para "assets" //Certo
+    2. Os ficheiros css devem estar dentro da pasta css //certo
+    3. Não manteve a consistência no footer, no figma os elementos de cor black e aqui tem cor white
+    4. Não criou a paleta de cores e não definiu a tipografia
+    5. comente cada secção para dar a entender que parte está a estilizar
+    6. No texto (descrição) da secção "About me" coloque um espeçamento entre o subtitulo "Hi, I´m..." e o parágrafo abaixo dele
+*/
+@import url(variaveis.css);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: var(--font-weight);
+  font-family: var(--font-family);
+  font-style: var(--font-style);
+  color: var(--color-text);
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3px;
+  flex: 1 1 100%;
+  background: var(--Bg-color)
+}
+header {
+  display: flex;
+  flex: 1 1 100%;
+  height: 110px;
+  padding: 0px 80px;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+
+header > section > h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: var(--font-family);
+  color: var(--color-text);
+  
+}
+nav {
+  display: flex;
+  gap: 50px;
+  font-size: 24px;
+  
+}
+header nav a {
+  display: inline-block;
+  position: relative;
+}
+.nav a::before,
+.nav a::after{
+   content: "";
+   position: absolute;
+   width: 0%;
+   height: 100%;
+   left: 0;
+   z-index: -1;
+
+}
+.nav a::before{
+   bottom: 1;
+   border-bottom: 3px solid #161616;
+   border-radius: 2px;
+   transition: .2s linear;
+
+}
+.nav a::after{
+    top: 0;
+    background: none;
+    transition: .2s linear;
+
+
+}
+.nav a:hover::before,
+.nav a:hover::after{
+   width: 100%;
+}
+
+#color1 {
+  color: #000000;
+}
+
+
+
+main {
+  display: flex;
+  flex: 1 1 100%;
+  padding: 100px 50px;
+  flex-direction: column;
+}
+
+main img {
+  border-radius: 30%;
+  border: 25px solid rgb(255, 255, 255);
+  width: 400px;
+  height: 430px;
+  margin-right: 15px;
+  position: absolute;
+  right: 150px;
+}
+
+main > section h1:first-child {
+  font-size: 64px;
+  color: aliceblue;
+  font-weight: 200;
+}
+main span:first-child {
+  color: aliceblue;
+}
+
+main span:last-child {
+  color: var(--color-text2);
+  font-family: var(--font-family);
+  font-weight: bold;
+}
+.article {
+  font-size: 38px;
+}
+
+#p1 {
+  color: var(--color-text2);
+}
+main nav{
+  display: flex;
+  gap: 50px;
+  margin: 20px 0;
+  font-size: 16px;
+ 
+}
+.Navi a:first-child {
+  padding: 10px 60px;
+  border: none;
+  outline: none;
+  background-color: #0774bb;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: var(--border-radius);
+}
+.Navi a:first-child::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #0774bb;
+  left: 0;
+  top: 0;
+  border-radius: var(--border-radius);
+}
+
+.Navi a:first-child::before {
+  content: "";
+  background: #d8d8d8;
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 600%;
+  z-index: -1;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  filter: blur(8px);
+  transition: opacity 0.5s ease-in-out;
+  border-radius: var(--border-radius);
+  opacity: 0;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.Navi a:first-child:hover::before {
+  opacity: 1;
+}
+
+.Navi a:first-child:active::after {
+  background: transparent;
+}
+
+
+.Navi a:last-child {
+  padding: 10px 40px;
+  border: none;
+  outline: none;
+  background-color: #0774bb;
+  cursor: pointer;
+  position: relative;
+  left: -30px;
+  z-index: 0;
+  border-radius: var(--border-radius);
+}
+.Navi a:last-child::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #0774bb;
+  left: 0;
+  top: 0;
+  border-radius: var(--border-radius);
+}
+.Navi a:last-child::before {
+  content: "";
+  background: #ffffff;
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 600%;
+  z-index: -1;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  filter: blur(8px);
+  transition: opacity 0.5s ease-in-out;
+  border-radius: var(--border-radius);
+  opacity: 0;
+}
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.Navi a:last-child:hover::before {
+  opacity: 1;
+}
+.Navi a:last-child:active::after {
+  background: transparent;
+}
+.Navi a:last-child:active {
+  color: #161616;
+  font-weight: bold;
+}
+.About {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+  color: var(--color-text);
+}
+#Aboutme h1{
+  font-family: var(--font-family);
+  font-weight: bold;
+  color: var(--color-text2);
+}
+
+
+
+.About > article {
+  display: flex;
+  text-align: center;
+  width: 40vw;
+  color: #ffffff;
+  justify-content: center;
+}
+footer {
+  
+  display: flex;
+  flex: 1 1 100%;
+  flex-direction: row;
+  align-items: center;
+  height: 100px;
+  width: 100vh;
+  justify-content: space-around;
+  border-top: 2px  solid white  ;
+  color: white;
+  
+}

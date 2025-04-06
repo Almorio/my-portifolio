@@ -1,0 +1,25 @@
+ 
+ /*Difinição de Variáveis Globais*/
+ :root {
+    /*Palete de Cores */
+    --color-primary: #0774BB;
+    --color-secondary: #042B6B;
+    --Bg-color: linear-gradient(to top, #043382, #0774bb);
+    --color-text: white;
+    --color-text2: #161616;
+
+
+    /*Tipografia*/
+    --font-family: "Inter", sans-serif;
+    --font-optical-sizing: auto;
+    --font-weight: <weight>;
+    --font-style: normal;
+    --font-size: 16px;
+
+    /*Bordas e Sombras*/
+    --border-radius: 18px;
+    
+
+    /*button e sombras*/
+
+}
