@@ -1,6 +1,7 @@
-/*
-    1. O título "Projects" ficaria melhor com cor branca
-*/
+
+
+/* Importa variaveis CSS de um arquivo externo*/
+
 @import url(variaveis.css);
 * {
   margin: 0;
@@ -12,6 +13,8 @@
   font-style: var(--font-style);
   color: var(--color-text);
 }
+
+/* Estrotura principal*/
 
 body {
   display: flex;
@@ -37,12 +40,16 @@ header > section > h1 {
   color: #ffffff;
   
 }
+/*Estelização na barra de  navegação*/
 nav {
   display: flex;
   gap: 50px;
   font-size: 24px;
   
 }
+
+/*Efeito hover nos links de navegação*/
+
 header nav a {
   display: inline-block;
   position: relative;
@@ -74,6 +81,8 @@ header nav a {
 
 
 }
+/* Efeito sublinhado animado */
+
 .nav a:hover::before,
 .nav a:hover::after{
    width: 100%;
@@ -90,8 +99,9 @@ main {
   padding: 100px 50px;
   flex-direction: column;
 }
+/* Sutítulo*/
 
-.h34 {
+#main.title {
   display: inline;
   text-align: center;
   padding: 5px;
@@ -99,23 +109,30 @@ main {
   font-size: 48px;
   color: white;
 }
-.h35 h2 {
+ main section h2 {
   font-size: 32px;
   padding: 5px;
   color: rgb(255, 255, 255);
 }
-.h36 {
+main section h3 {
   display: flex;
   padding: 5px;
   color: rgb(255, 255, 255);
 }
-.h37 {
+main section p {
   display: flex;
   height: 180px;
   width: 40vw;
   padding: 5px;
   color: rgb(255, 255, 255);
 }
+
+/*Componetes flutuantes */
+
+/*==========================*/
+
+/* Div flutuate  à direita com sombra */
+
 .divp {
   display: flex;
   float: right;
@@ -123,12 +140,15 @@ main {
   top: -250px;
   box-shadow: 2.5px 2.5px 15px #161616;
 }
+/* Título com posicionamento ajustado */
 .h38 {
   font-size: 32px;
   position: relative;
   top: -50px;
   color: rgb(255, 255, 255);
-}
+} 
+
+/*Card Flutuante*/
 
 .divcard {
   display: flex;
@@ -137,6 +157,7 @@ main {
   top: -250px;
   box-shadow: 2.5px 2.5px 15px #161616;
 }
+/* texto com largura limitada */
 .h39 {
   width: 30vw;
   position: relative;
@@ -155,6 +176,9 @@ main {
   top: -30px;
   color: rgb(255, 255, 255);
 }
+
+/*logo Flutuante*/
+
 .divlogo {
   display: flex;
   float: right;
@@ -162,6 +186,8 @@ main {
   top: -250px;
   box-shadow: 2.5px 2.5px 15px #161616;
 }
+
+/* footer */
 
 footer {
   margin: 3px;
