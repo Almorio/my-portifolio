@@ -1,8 +1,8 @@
-/*
-    1. O título "Contact" ficaria melhor com cor branca
-    2. A secção das informações de contacto não está devidamente alinhada ao formulário
-*/
+/* Importa variaveis CSS de um arquivo externo*/
+
 @import url(variaveis.css);
+/* Reset básico para remover margens,paddingf padrão e difinir boxel-model*/
+
 * {
   margin: 0;
   padding: 0;
@@ -13,14 +13,18 @@
   font-style: var(--font-style);
   color: var(--color-text);
 }
+/* Estrotura principal*/
 
 body {
   display: flex;
   flex-wrap: wrap;
   margin: 3px;
-  flex: 1 1 100%;
+  flex: 1 1 100%; /* Ocupa 100% do espaço disponivel*/
   background: var(--Bg-color)
 }
+
+ /* header/navegação*/ 
+
 header {
   display: flex;
   flex: 1 1 100%;
@@ -30,6 +34,7 @@ header {
   align-items: center;
  
 }
+/*Titulo principal no header */
 
 header > section > h1 {
   font-size: 3rem;
@@ -38,12 +43,17 @@ header > section > h1 {
   color: #ffffff;
   
 }
+
+/*Estelização na barra de  navegação*/
+
 nav {
   display: flex;
   gap: 50px;
   font-size: 24px;
   
 }
+/*Efeito hover nos links de navegação*/
+
 header nav a {
   display: inline-block;
   position: relative;
@@ -51,6 +61,10 @@ header nav a {
 
 
 }
+
+
+/* Efeito sublinhado animado*/
+
 .nav a::before,
 .nav a::after{
    content: "";
@@ -92,11 +106,13 @@ main {
    
    
 }
+
+/* base (alinhamento central) */
 .base{
     display: flex;
     justify-content: center;
 }
-
+/* formulario de contato */
 
 .contact{
     color: #ffffff;
@@ -114,12 +130,13 @@ main {
     flex-direction: column;
     width: 20vw;
  
-    
+   
 }
 .gmail h1{
     font-size: 2rem;
     margin: 10px 0;
 }
+/* Container do campo email */
 .form1{
     display: flex;
     justify-content: end;
@@ -128,6 +145,7 @@ main {
     
 
 }
+/**Campo de nome*/
 
 
 .Name{
@@ -144,10 +162,13 @@ main {
    
     
 }
+
 .Btt{
+    /* botões (estilos e efeitos)**/
 
     display: flex;
-    padding: 10px 40px;
+    padding: 0.8rem 2.5rem;
+    min-width: 120px;
     border: none;
     outline: none;
     background-color:  #0774BB;
@@ -157,7 +178,11 @@ main {
     z-index: 0;
     border-radius: 12px;
 }
+
+  /*campo de fundo do botão */
+
 .Btt::after {
+  
         content: "";
         z-index: -1;
         position: absolute;
@@ -184,6 +209,10 @@ main {
         border-radius: 10px;
         opacity: 0;
 }
+
+/* Animação  do brilho */
+
+
 @keyframes glowing {
         0% {background-position: 0 0;}
         50% {background-position: 400% 0;}
@@ -202,6 +231,7 @@ main {
 
  }
 
+ /*Alnhamento dos botões*/
 
 .bttr{
 
@@ -210,6 +240,8 @@ main {
     justify-content: end;
     
 }
+
+/** footer */
 footer{
     
     display: flex;
