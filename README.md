@@ -2,6 +2,10 @@
 
 <br>
 
+**Contact me**
+
+[Portifolio](https://almorio.github.io/my-portifolio/) | [Linkedin](https://www.linkedin.com/in/almorio-adolfo/) | [Instagram](https://www.instagram.com/almorioadolfo/) | [Facebook](https://web.facebook.com/profile.php?id=100091277516658)
+
 ## About Me
 
 - I'm currently studying to be a junior Full Stack Ddeveloper
@@ -30,6 +34,7 @@
 <summary>Development</summary>
 </details>
 
+</details>
 <details> 
 <summary>Techy Tools</summary>
 
@@ -37,7 +42,5 @@
 **Backend** `Node.js`.
 **Design:** `Adobe`, `Figma`, `Canva`
 **Tools:** `git`, `VSCode`, `Notion`, `EdrawMind`
-
-</details>
 
 </details>
