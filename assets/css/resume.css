@@ -6,7 +6,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  
   text-decoration: none;
   font-weight: var(--font-weight);
   font-family: var(--font-family);
@@ -99,7 +99,7 @@ main{
 
 }
 
-.h29{
+#resume{
     justify-content: center;
     display: flex;
     align-items: center;
@@ -117,50 +117,73 @@ main{
 
 
 
-nav {
+main nav  {
     display: flex;
     gap: 50px;
-    font-size: 24px;
-    
-  }
-  nav a {
-   display: flex;
-   justify-content: end;
-  }
-  .nav a::before,
-  .nav a::after{
-     content: "";
-     position: absolute;
-     width: 0%;
-     height: 100%;
-     left: 0;
-     z-index: -1;
-  
-  }
-  .nav a::before{
-     bottom: 1;
-     border-bottom: 3px solid #161616;
-     border-radius: 2px;
-     transition: .2s linear;
-  
-  }
-  .nav a::after{
-      top: 0;
-      background: none;
-      transition: .2s linear;
-  
-  
-  }
-  
-  /* enfeito ao passar o mause*/
+    margin: 20px 0;
+    font-size: 16px;
+    justify-content: end;
 
-  .nav a:hover::before,
-  .nav a:hover::after{
-     width: 100%;
   }
+  .Nav a{
+  padding: 10px 60px;
+  border: none;
+  outline: none;
+  background-color: #0774bb;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: var(--border-radius);
 
-    
+  
+  }
+   .Nav a ::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #0774bb;
+    left: 0;
+    top: 0;
+    border-radius: var(--border-radius);
 
+   }
+   .Nav a::before {
+    content: "";
+    background: #d8d8d8;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    transition: opacity 0.5s ease-in-out;
+    border-radius: var(--border-radius);
+    opacity: 0;
+  }
+  
+@keyframes glowing {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0; 
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  .Navi a::before {
+    opacity: 1;
+  }
+  
+  .Navi a::after {
+    background: transparent;
+  }
 main > section h2{
     padding: 20px;
     width: 40vw;

@@ -12,6 +12,7 @@
   font-family: var(--font-family);
   font-style: var(--font-style);
   color: var(--color-text);
+ 
 }
 
 /* Estrotura principal*/
@@ -21,7 +22,8 @@ body {
   flex-wrap: wrap;
   margin: 3px;
   flex: 1 1 100%;
-  background: var(--Bg-color)
+  background: var(--Bg-color);
+  
 }
 header {
   display: flex;
@@ -37,7 +39,7 @@ header > section > h1 {
   font-size: 3rem;
   font-weight: bold;
   font-family: sans-serif;
-  color: #ffffff;
+ 
   
 }
 /*Estelização na barra de  navegação*/
@@ -101,9 +103,10 @@ main {
 }
 /* Sutítulo*/
 
-#main.title {
-  display: inline;
-  text-align: center;
+#project{
+  justify-content: center;
+  display: flex;
+  align-items: center;
   padding: 5px;
   height: 100px;
   font-size: 48px;
