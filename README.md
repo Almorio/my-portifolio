@@ -11,30 +11,27 @@
 
 <details>
 
-<summary>What i do<summary>
+<summary>What i do</summary>
 
 <details>
-
 <summary>Content Creation</summary>
 
 - Content creation about design tips for daily posts [tasbizz.Graphic](https://web.facebook.com/profile.php?id=61556161880230).
-
 </details>
 
 <details> 
-  <dummary> Design </summary>
+  <summary>Design</summary>
 
 - Crafting visual designs and user experiences in [Figma](https://www.figma.com/).
 - Checkout my design on [Behance](https://www.behance.net/almorioadolfo01).
-
-</details>
-<details> 
-  <dummary> Development </summary>
-
 </details>
 
 <details> 
-  <dummary>Techy Tools</summary>
+<summary>Development</summary>
+</details>
+
+<details> 
+<summary>Techy Tools</summary>
 
 **Frontend:** `HTML`, `CSS`, `JavaScript`,
 **Backend** `Node.js`.
@@ -43,4 +40,4 @@
 
 </details>
 
- </details>
+</details>
